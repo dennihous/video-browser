@@ -1,11 +1,21 @@
 <template>
-  <div >
-    Hi there!
+  <div>
+    <SearchBar v-on:termChange="onTermChange" ></SearchBar>
   </div>
 </template>
 
 <script>
+  import SearchBar from './components/SearchBar'
+
   export default {
-    name: 'App'
+    name: 'App',
+    components: {
+      SearchBar
+    },
+    methods: {
+      onTermChange: function(searchTerm){
+        console.log(searchTerm)
+      }
+    }
   }
 </script>
