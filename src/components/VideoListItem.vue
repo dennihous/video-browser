@@ -26,8 +26,8 @@ export default {
 
 <style scoped>
   li {
-    display: flex;
-    /* justify-content: space-between; */
+    /* display: flex;
+    justify-content: space-between; */
     cursor: pointer;
   }
 
